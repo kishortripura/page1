@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+    <!-- Link up Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- linkup stylesheet css  -->
+    <link rel="stylesheet" href="Css/Preview.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="#">
+                <img class="logo" src="Logo/Logo.png" title="app lyfacture com" alt="logo">
+
+                <img class="lyfacture" src="Logo/lyfacture.png" alt="lyfacture">
+            </a>
+            <span class="English">English</span>
+            <img class="globe-icon" src="Logo/globe icon 1.png" alt="globe-icon" srcset="">
+        </nav>
+        <div class="Top-btns">
+            <!-- <button type="button" id="invoiceTemplateButton" class="Invoice-Template-btn">
+                <span class="Invoice-Template">Invoice Template
+                    <img class="Vector" src="Logo/Vector.png" alt="Vector">
+                </span>
+            </button> -->
+            <select class="Invoice-Template-btn">
+                <option value="Invoice Template">Invoice Template</option>
+                <option>Bank Transfer</option>
+                <option>Cash Payment</option>
+                <option>Payoneer</option>
+                <option>Others</option>
+            </select>
+            <button type="button" id="pdfButton" class="PDF-btn">
+                <img src="Logo/Vector (1).png" alt="" srcset="">
+            </button>
+            <button type="button" id="sendButton" class="Send-btn">
+               <img src="Logo/Vector -send.png" alt="" srcset="">
+            </button>
+        </div>
+
+        <div class="Top-btns">
+           
+        </div>
+        <div class="Preview-btn-section">
+            <button type="button" id="previewButton" class="Preview-btn">
+                <span class="Preview-btn-text">Preview</span>
+            </button>
+            <button type="button" id="editButton" class="Edit-btn">
+                <span class="Edit-btn-text">Edit</span>
+            </button>
+        </div>
+    </header>
+    <div class="Invoice-BG">
+
+    </div>
+
+
+    <!-- preview button onclick function -->
+    <script type="text/javascript">
+        document.getElementById("previewButton").onclick = function () {
+            location.href = "./Previvew.html";
+        };
+    </script>
+
+     <!-- edit button onclick function -->
+     <script type="text/javascript">
+        document.getElementById("editButton").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+    <!-- pdf button onclick function -->
+    <script type="text/javascript">
+        document.getElementById("pdfButton").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+    <!--send button onclick function -->
+    <script type="text/javascript">
+        document.getElementById("sendButton").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+    <!-- link up boostrap js bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
